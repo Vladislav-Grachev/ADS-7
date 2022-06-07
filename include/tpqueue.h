@@ -20,7 +20,7 @@ class TPQueue {
     item->prev = nullptr;
     return item;
 }
- 
+
  public:
     TPQueue() :head(nullptr), tail(nullptr) {}
 
@@ -55,7 +55,7 @@ class TPQueue {
     delete head;
     head = cur;
     return val;
-  }// реализация шаблона очереди с приоритетом на связанном списке
+  }
 };
 
 struct SYM {
