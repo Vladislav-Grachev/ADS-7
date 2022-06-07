@@ -5,22 +5,22 @@
 template<typename T>
 class TPQueue {
  private:
-   struct ITEM {
-       T val;
-       ITEM* next;
-       ITEM* prev;
-   };
- ITEM* head;
- ITEM* tail;
+    struct ITEM {
+        T val;
+        ITEM* next;
+        ITEM* prev;
+    };
+  ITEM* head;
+  ITEM* tail;
 
-   ITEM* create(T val) {
-   ITEM* item = new ITEM;
-   item->val = val;
-   item->next = nullptr;
-   item->prev = nullptr;
-   return item;
- }
-
+    ITEM* create(T val) {
+    ITEM* item = new ITEM;
+    item->val = val;
+    item->next = nullptr;
+    item->prev = nullptr;
+    return item;
+}
+ 
  public:
     TPQueue() :head(nullptr), tail(nullptr) {}
 
